@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Defines a class Square with size validation, area calculation,
-and size getter/setter."""
+"""Defines a class Square that prints a square with the # character."""
 
 class Square:
     """Represents a square."""
@@ -19,11 +18,7 @@ class Square:
 
     @property
     def size(self):
-        """Gets the size of the square.
-        
-        Returns:
-            int: The size of the square.
-        """
+        """Gets the size of the square."""
         return self.__size
 
     @size.setter
@@ -44,9 +39,13 @@ class Square:
         self.__size = value
 
     def area(self):
-        """Calculates the area of the square.
-        
-        Returns:
-            int: The area of the square.
-        """
+        """Calculates the area of the square."""
         return self.__size ** 2
+
+    def my_print(self):
+        """Prints the square with the # character."""
+        if self.__size == 0:
+            print("")
+        else:
+            for _ in range(self.__size):
+                print("#" * self.__size)
