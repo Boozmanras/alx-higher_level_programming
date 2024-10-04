@@ -1,8 +1,21 @@
 #!/usr/bin/python3
-"""Module for add_attribute function."""
+"""
+This module contains a function that adds a new attribute to an object if possible.
+"""
+
 
 def add_attribute(obj, attr, value):
-    """Add a new attribute to an object if possible."""
+    """
+    Adds a new attribute to an object if possible.
+
+    Args:
+        obj: The object to add the attribute to.
+        attr (str): The name of the attribute to add.
+        value: The value of the attribute to add.
+
+    Raises:
+        TypeError: If the object can't have new attributes.
+    """
     if not hasattr(obj, '__dict__'):
         raise TypeError("can't add new attribute")
     setattr(obj, attr, value)
