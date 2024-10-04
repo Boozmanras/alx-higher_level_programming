@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module contains a function that adds a new attribute to an object if possible.
+This module contains a function that adds a
+new attribute to an object if possible.
 """
 
 
