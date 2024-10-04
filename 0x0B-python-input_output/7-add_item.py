@@ -7,8 +7,8 @@ from 6-load_from_json_file import load_from_json_file
 
 
 def main():
-    """Load existing items from 'add_item.json',
-       add new items from arguments, and save."""
+    """Load existing items, add new items from
+       arguments, and save to 'add_item.json'."""
     filename = 'add_item.json'
     try:
         items = load_from_json_file(filename)
